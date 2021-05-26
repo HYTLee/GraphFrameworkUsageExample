@@ -16,8 +16,6 @@
 		80D6DB3F265DB32600A246D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D6DB3D265DB32600A246D4 /* LaunchScreen.storyboard */; };
 		80D6DB4A265DB32600A246D4 /* GraphFrameworkExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DB49265DB32600A246D4 /* GraphFrameworkExampleTests.swift */; };
 		80D6DB55265DB32600A246D4 /* GraphFrameworkExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DB54265DB32600A246D4 /* GraphFrameworkExampleUITests.swift */; };
-		80D6DB72265DB33C00A246D4 /* GraphFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D6DB6B265DB33100A246D4 /* GraphFramework.framework */; };
-		80D6DB73265DB33C00A246D4 /* GraphFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80D6DB6B265DB33100A246D4 /* GraphFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80D6DB7B265DB36100A246D4 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DB78265DB36100A246D4 /* Column.swift */; };
 		80D6DB7C265DB36100A246D4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DB79265DB36100A246D4 /* Response.swift */; };
 		80D6DB7D265DB36100A246D4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6DB7A265DB36100A246D4 /* Settings.swift */; };
@@ -40,20 +38,6 @@
 			remoteGlobalIDString = 80D6DB2B265DB32500A246D4;
 			remoteInfo = GraphFrameworkExample;
 		};
-		80D6DB6A265DB33100A246D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80D6DB65265DB33100A246D4 /* GraphFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80D6DA7E265DB16500A246D4;
-			remoteInfo = GraphFramework;
-		};
-		80D6DB6C265DB33100A246D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80D6DB65265DB33100A246D4 /* GraphFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80D6DA87265DB16500A246D4;
-			remoteInfo = GraphFrameworkTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80D6DB73265DB33C00A246D4 /* GraphFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +69,6 @@
 		80D6DB50265DB32600A246D4 /* GraphFrameworkExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphFrameworkExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D6DB54265DB32600A246D4 /* GraphFrameworkExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFrameworkExampleUITests.swift; sourceTree = "<group>"; };
 		80D6DB56265DB32600A246D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D6DB65265DB33100A246D4 /* GraphFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GraphFramework.xcodeproj; path = ../../GraphFramework/GraphFramework.xcodeproj; sourceTree = "<group>"; };
 		80D6DB78265DB36100A246D4 /* Column.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		80D6DB79265DB36100A246D4 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		80D6DB7A265DB36100A246D4 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -99,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D6DB72265DB33C00A246D4 /* GraphFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +125,6 @@
 		80D6DB2E265DB32500A246D4 /* GraphFrameworkExample */ = {
 			isa = PBXGroup;
 			children = (
-				80D6DB65265DB33100A246D4 /* GraphFramework.xcodeproj */,
 				80D6DB2F265DB32500A246D4 /* AppDelegate.swift */,
 				80D6DB31265DB32500A246D4 /* SceneDelegate.swift */,
 				80D6DB77265DB36100A246D4 /* TestData */,
@@ -176,15 +156,6 @@
 				80D6DB56265DB32600A246D4 /* Info.plist */,
 			);
 			path = GraphFrameworkExampleUITests;
-			sourceTree = "<group>";
-		};
-		80D6DB66265DB33100A246D4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80D6DB6B265DB33100A246D4 /* GraphFramework.framework */,
-				80D6DB6D265DB33100A246D4 /* GraphFrameworkTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		80D6DB71265DB33C00A246D4 /* Frameworks */ = {
@@ -302,12 +273,6 @@
 			mainGroup = 80D6DB23265DB32500A246D4;
 			productRefGroup = 80D6DB2D265DB32500A246D4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 80D6DB66265DB33100A246D4 /* Products */;
-					ProjectRef = 80D6DB65265DB33100A246D4 /* GraphFramework.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				80D6DB2B265DB32500A246D4 /* GraphFrameworkExample */,
@@ -316,23 +281,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		80D6DB6B265DB33100A246D4 /* GraphFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GraphFramework.framework;
-			remoteRef = 80D6DB6A265DB33100A246D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80D6DB6D265DB33100A246D4 /* GraphFrameworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GraphFrameworkTests.xctest;
-			remoteRef = 80D6DB6C265DB33100A246D4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		80D6DB2A265DB32500A246D4 /* Resources */ = {
